@@ -9,7 +9,7 @@ import useData from "./Hooks/useData"
 
 
 function App() {
-  const {filterItem, getData, data } = useData
+  const { data} = useData()
   const [theme, setTheme] = useState('light')
  
 

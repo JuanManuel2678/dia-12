@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import React from 'react'
 
 const useData = () => {
-    const [data, setData] = useState(filterItem) 
+    const [data, setData] = useState([]) 
 
     async function getData() {
       const rs = await fetch('https://dummyjson.com/products')
@@ -24,8 +24,6 @@ const useData = () => {
   
      
   return {
-    filterItem,
-    getData,
     data
   }
 }
